@@ -14,9 +14,7 @@ const Navbar = () => {
 
     const menuItems = <React.Fragment>
         <li><Link to="/">Home</Link></li>
-        {/* <li><Link to="/product">Product</Link></li> */}
-        {/* <li><Link to="/register">{name }</Link></li> */}
-        
+       
 
     </React.Fragment>
     return (
@@ -32,7 +30,7 @@ const Navbar = () => {
           {menuItems}
         </ul>
       </div>
-      <a className="btn btn-ghost text-xl">daisyUI</a>
+      <a className="btn btn-ghost text-4xl gap-0"><span className='text-red-500 text-4xl'>Rup</span>ock</a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">
@@ -45,7 +43,7 @@ const Navbar = () => {
             {
               user ?<div className="w-10 rounded-full">
               <img alt="Tailwind CSS Navbar component" src={user?.photoURL} />
-            </div>: <button><Link to="/login">Login</Link></button>
+            </div>: <button className='hover:text-red-500'><Link to="/login"><span className='text-red-500 font-bold'>L</span>ogin</Link></button>
             }
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
